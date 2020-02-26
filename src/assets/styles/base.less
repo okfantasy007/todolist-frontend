@@ -1,0 +1,64 @@
+@import './constants.less';
+@import '../fonts/iconfont.css';
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  .title {
+    display: inline;
+    color: @main-theme-color;
+    cursor: pointer;
+    .large-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 53px;
+    }
+    .normal-title {
+      margin-left: 3px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+  }
+  .login-info {
+    float: right;
+    color: black;
+    .logout {
+      margin-left: 20px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  margin-top: 64px;//此处用top: 64px会导致页面底部会出现白色区域
+  .under-border {
+    border-bottom: 1px solid #dcdcdc;
+  }
+}
+
+.online-user-pop {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #0e5897;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: lightgray;
+  }
+}

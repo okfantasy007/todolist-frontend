@@ -1,0 +1,102 @@
+@import './constants.less';
+.ant-select {
+  width: 120px;
+}
+
+.ant-input {
+  width: 100%;
+}
+
+.ant-menu-item {
+  transition: none;
+}
+.ant-menu-vertical .ant-menu-item,
+.ant-menu-inline .ant-menu-item {
+  margin-top: 0;
+  border-left: 3px solid transparent;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  border-left: 3px solid #3c8dbc;
+  background: #1e282c;
+}
+
+.ant-menu-item:hover {
+  color: red
+}
+
+.ant-table {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.ant-table .ant-table-thead {
+  background-color: #ecedef;
+}
+
+.ant-table .ant-table-thead>tr>th {
+  background: #efefef;
+  padding: 8px 16px;
+  color: #7d7d7d;
+  font-weight: 500;
+}
+
+.ant-table-body {
+  //border: 1px solid #e8e8e8;
+}
+
+.ant-table-row {
+  // cursor: pointer;
+  &:nth-child(even) {
+    background-color: @table-even-background-color;
+  }
+}
+
+//.ant-form-item {
+//  margin-bottom: 16px;
+//}
+//
+//.ant-form-item-with-help {
+//  margin-bottom: -3px;
+//}
+//
+//.has-error .ant-form-explain, .has-error .ant-form-split {
+//  font-size: 13px;
+//}
+
+.ant-modal-close-x {
+  margin-top: -5px;
+}
+
+.ant-modal-header {
+  padding: 12px 24px;
+}
+
+.ant-modal-body {
+  padding-bottom: 5px;
+}
+
+.delete-sure {
+  .ant-modal-body {
+    padding-bottom: 24px;
+  }
+}
+
+.ant-dropdown-menu {
+  margin-top: -4px;
+}
+
+.ant-modal-header {
+  text-align: center;
+}
+
+.ant-modal-title {
+  font-weight: 700;
+}
+
+.ant-table-pagination.ant-pagination {
+  float: none;
+  text-align: center;
+}
+
+
