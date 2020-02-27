@@ -165,7 +165,17 @@
 
 ![管理员账号-用户](https://github.com/okfantasy007/todolist-web/blob/master/image/%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7-%E7%94%A8%E6%88%B7.png "管理员账号-用户")
 
+**管理员账号权限**
+- 查看、编辑自己的任务列表（已完成，未完成）
+- 查看其它同事的任务列表（只能查看，无法编辑）
+- 查看、编辑自己的用户信息
+- 查看其它同事的用户信息，删除其它普通账号，将普通账号升级为管理员账号
+
 ##### 9.2、普通账号
 ![普通账号-todolist](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%99%AE%E9%80%9A%E8%B4%A6%E5%8F%B7-todolist.png "普通账号-todolist")
 
 ![普通账号-用户](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%99%AE%E9%80%9A%E8%B4%A6%E5%8F%B7-%E7%94%A8%E6%88%B7.png "普通账号-用户")
+
+**普通账号权限**
+- 查看、编辑自己的任务列表（已完成，未完成）
+- 查看、编辑自己的用户信息
