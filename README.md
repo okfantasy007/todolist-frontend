@@ -75,7 +75,7 @@
       |     |-- store/                              // redux汇聚
       |     |     |-- index.js
       |     |-- utils/                              // 公用方法&通用工具
-      |     |     |-- async-component.js            
+      |     |     |-- async-component.js            // 异步加载组件（高阶组件HOC）
       |     |     |-- index.js                      // 通用方法汇聚
       |     |     |-- request.js                    // axios实例封装
       |     |     |-- RSA.js                        // RSA工具
