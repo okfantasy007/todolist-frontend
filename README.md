@@ -136,3 +136,27 @@
 - 测试用例和测试报告   
     + 测试用例：xxx
     + 测试报告：xxx
+
+### 六、功能介绍
+#### 新用户注册
+![新用户注册](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%B3%A8%E5%86%8C.png "新用户注册")
+
+#### 登录成功主动提示未完成任务信息
+![登录成功主动提示信息](https://github.com/okfantasy007/todolist-web/blob/master/image/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.png "登录成功主动提示信息")
+
+#### 展示在线用户信息（用户列表，用户数）
+![展示在线用户信息](https://github.com/okfantasy007/todolist-web/blob/master/image/%E5%B1%95%E7%A4%BA%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%88%97%E8%A1%A8.jpg "展示在线用户信息")
+
+#### 新用户登录系统，其他在线用户均可收到该用户的登录通知
+![新用户登录广播通知](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%96%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E9%80%9A%E7%9F%A5.png "新用户登录广播通知")
+
+#### 用户退出系统，自动更新所有在线用户客户端的在线用户信息
+
+#### 简单权限管理
+##### 管理员账号
+![管理员账号-todolist](https://github.com/okfantasy007/todolist-web/blob/master/image/%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7-todolist.png "管理员账号-todolist")
+
+![管理员账号-用户](https://github.com/okfantasy007/todolist-web/blob/master/image/%E7%AE%A1%E7%90%86%E5%91%98%E8%B4%A6%E5%8F%B7-%E7%94%A8%E6%88%B7.png "管理员账号-用户")
+
+#### 普通账号
+
