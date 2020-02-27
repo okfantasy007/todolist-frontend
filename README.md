@@ -38,7 +38,7 @@
       |     |     |     |-- base.less               // 公用样式 或 基础样式
       |     |     |     |-- constants.less          // less全局变量
       |     |-- config/                             
-      |     |     |-- index.js/                     // 后端API地址配置文件
+      |     |     |-- index.js/                     // 后端websocket API地址配置文件
       |     |-- containers/                         // smart型组件
       |     |     |-- addTaskPage/                  // 组件汇聚
       |     |     |     |-- index.js                // 组件入口
