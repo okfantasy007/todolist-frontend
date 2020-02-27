@@ -157,7 +157,7 @@
 #### 7、管理员账号删除普通账号，如果被删除的普通账号处于已登录状态，则自动让其退出系统
 
 #### 8、检测敏感用户信息变更，自动重定向到登录页重新登录
-![检测用户信息变更](http:/https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%A3%80%E6%B5%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%8F%98%E6%9B%B4.png "检测用户信息变更")
+![检测用户信息变更](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%A3%80%E6%B5%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%8F%98%E6%9B%B4.png "检测用户信息变更")
 
 #### 9、简单权限管理
 ##### 9.1、管理员账号
