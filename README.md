@@ -10,7 +10,7 @@
 - 当前版本：1.0.0
 - 代码托管  
    - 工具：gitLab
-   - 地址：https://gitlab.com/okfantasy007/react-project-demo.git
+   - 地址：https://github.com/okfantasy007/todolist-web.git
 
 ### 二、开发相关  
 #### 1. 技术栈部分  
