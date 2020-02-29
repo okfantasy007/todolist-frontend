@@ -14,16 +14,22 @@
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
+<script>
+	window.domLoadStartTime = new Date().getTime();
+</script>
 <div id="root"></div>
 <script type="text/javascript" src="/static/js/main.10719d50.js"></script>
 <script>
 	$(document).ready(function () {
-		window.startTime = new Date().getMilliseconds();
+		window.domLoadEndTime = new Date().getTime();
 	});
 	window.onload = function () {
-		window.endTime = new Date().getMilliseconds();
-		console.log(window.startTime, window.endTime, window.endTime - window.startTime);
-	}
+		window.allLoadEndTime = new Date().getTime();
+	};
+	console.log("window.domLoadStartTime", window.domLoadStartTime);
+	console.log("window.domLoadEndTime", window.domLoadEndTime);
+	console.log("window.allLoadEndTime", window.allLoadEndTime);
+	console.log("window.performance.timing", window.performance.timing);
 </script>
 </body>
 </html>
