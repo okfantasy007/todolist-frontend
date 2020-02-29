@@ -9,7 +9,7 @@
 
 - 当前版本：1.0.0
 - 代码托管  
-   - 工具：gitLab
+   - 工具：gitHub
    - 地址：https://github.com/okfantasy007/todolist-web.git
 
 ### 二、开发相关  
