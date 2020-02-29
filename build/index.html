@@ -20,15 +20,15 @@
 <div id="root"></div>
 <script type="text/javascript" src="/static/js/main.10719d50.js"></script>
 <script>
+	console.log("window.domLoadStartTime", window.domLoadStartTime);
 	$(document).ready(function () {
 		window.domLoadEndTime = new Date().getTime();
+		console.log("window.domLoadEndTime", window.domLoadEndTime);
 	});
 	window.onload = function () {
 		window.allLoadEndTime = new Date().getTime();
+		console.log("window.allLoadEndTime", window.allLoadEndTime);
 	};
-	console.log("window.domLoadStartTime", window.domLoadStartTime);
-	console.log("window.domLoadEndTime", window.domLoadEndTime);
-	console.log("window.allLoadEndTime", window.allLoadEndTime);
 	console.log("window.performance.timing", window.performance.timing);
 </script>
 </body>
