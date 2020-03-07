@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -24,21 +24,38 @@
     <title>TODOLIST</title>
     <link rel="stylesheet" href="//at.alicdn.com/t/font_975949_r5oofw5zgz8.css">
     <script src="//at.alicdn.com/t/font_975949_r5oofw5zgz8.js"></script>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<script>
+	window.domLoadStartTime = new Date().getTime();
+</script>
+<div id="root"></div>
+<script>
+	console.log("~~~test jenkins github webhook~~~");
+	console.log("window.domLoadStartTime", window.domLoadStartTime);
+	$(document).ready(function () {
+		window.domLoadEndTime = new Date().getTime();
+		console.log("window.domLoadEndTime", window.domLoadEndTime);
+	});
+	window.onload = function () {
+		window.allLoadEndTime = new Date().getTime();
+		console.log("window.allLoadEndTime", window.allLoadEndTime);
+	};
+	console.log("window.performance.timing", window.performance.timing);
+</script>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+</body>
 </html>
