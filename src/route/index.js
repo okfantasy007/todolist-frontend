@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import {message} from 'antd';
-import Home from '../views/home';
-import Login from '../views/login';
-import Register from '../views/register';
-import SettingPage from "@/containers/settingPage";
+import AsyncComponent from '@/hoc/async-component';
 
+const Home = AsyncComponent(() => import('../views/home'));
+const Login = AsyncComponent(() => import('../views/login'));
+const Register = AsyncComponent(() => import('../views/register'));
+const SettingPage = AsyncComponent(() => import("@/containers/settingPage"));
 
 //全局配置消息最多显示一个
 message.config({
