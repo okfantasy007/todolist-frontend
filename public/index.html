@@ -45,7 +45,6 @@
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
 <script>
-	console.log("~~~test jenkins github webhook~~~");
 	console.log("window.domLoadStartTime", window.domLoadStartTime);
 	$(document).ready(function () {
 		window.domLoadEndTime = new Date().getTime();
@@ -56,6 +55,9 @@
 		console.log("window.allLoadEndTime", window.allLoadEndTime);
 	};
 	console.log("window.performance.timing", window.performance.timing);
+	const {navigationStart, domContentLoadedEventEnd, loadEventEnd} = window.performance.timing;
+	console.log("白屏时间（performance）", domContentLoadedEventEnd - navigationStart);
+    console.log("首屏时间（performance）", loadEventEnd - navigationStart);
 </script>
 </body>
 </html>
