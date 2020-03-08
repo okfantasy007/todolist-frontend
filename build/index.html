@@ -26,9 +26,10 @@ window.onload = function () {
 	window.allLoadEndTime = new Date().getTime();
 	console.log("window.allLoadEndTime", window.allLoadEndTime);
 	console.log("window.performance.timing", window.performance.timing);
-	const {navigationStart, domContentLoadedEventEnd, loadEventEnd} = window.performance.timing;
+	const {navigationStart, domContentLoadedEventEnd, loadEventStart, loadEventEnd} = window.performance.timing;
+	const pageFinishedTime = loadEventEnd || loadEventStart || window.allLoadEndTime;
 	console.log("白屏时间（performance）", domContentLoadedEventEnd - navigationStart);
-	console.log("首屏时间（performance）", loadEventEnd - navigationStart);
+	console.log("首屏时间（performance）", pageFinishedTime - navigationStart);
 };</script>
 </body>
 </html>
