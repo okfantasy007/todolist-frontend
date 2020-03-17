@@ -82,16 +82,16 @@
       |     |     |-- RSA.js                        // RSA工具
       |     |-- views/                              // 主页&登录页
       |     |     |-- home/                         // 主页    
-      |     |     |     |-- index.js/               // 主页入口
-      |     |     |     |-- index.less/             // 样式文件
+      |     |     |     |-- index.js                // 主页入口
+      |     |     |     |-- index.less              // 样式文件
       |     |     |-- login/                        // 登录页
-      |     |     |     |-- index.js/               // 登录页入口
-      |     |     |     |-- index.less/             // 样式文件
-      |     |     |     |-- reducer.js/             // 登录页reducer汇聚
+      |     |     |     |-- index.js                // 登录页入口
+      |     |     |     |-- index.less              // 样式文件
+      |     |     |     |-- reducer.js              // 登录页reducer汇聚
       |     |     |-- register/                     // 注册页
-      |     |     |     |-- index.js/               // 注册页入口
-      |     |     |     |-- index.less/             // 样式文件
-      |     |     |     |-- reducer.js/             // 注册页reducer汇聚           
+      |     |     |     |-- index.js                // 注册页入口
+      |     |     |     |-- index.less              // 样式文件
+      |     |     |     |-- reducer.js              // 注册页reducer汇聚           
       |     |-- index.js                            // JavaScript入口文件
       |-- .gitignore                                // git忽略配置文件
       |-- config-overrides.js                       // create-react-app工程配置
