@@ -23,7 +23,7 @@
 - 项目结构  
 
 ```  
-    react-project-demo/
+    ./
       |-- build/                                    // 存放打包文件
       |-- docs/                                     // 存放项目相关文档
       |-- public/
