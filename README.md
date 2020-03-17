@@ -38,7 +38,9 @@
       |     |     |     |-- base.less               // 公用样式 或 基础样式
       |     |     |     |-- constants.less          // less全局变量
       |     |-- config/                             
-      |     |     |-- index.js/                     // 后端websocket API地址配置文件
+      |     |     |-- index.js                      // 后端websocket API地址配置文件
+      |     |-- hoc/                             
+      |     |     |-- async-component.js            // 高阶组件
       |     |-- containers/                         // smart型组件
       |     |     |-- addTaskPage/                  // 组件汇聚
       |     |     |     |-- index.js                // 组件入口
@@ -75,7 +77,6 @@
       |     |-- store/                              // redux汇聚
       |     |     |-- index.js
       |     |-- utils/                              // 公用方法&通用工具
-      |     |     |-- async-component.js            // 异步加载组件（高阶组件HOC）
       |     |     |-- index.js                      // 通用方法汇聚
       |     |     |-- request.js                    // axios实例封装
       |     |     |-- RSA.js                        // RSA工具
@@ -117,15 +118,15 @@
 ### 三、部署相关  
 - 部署负责人：xxx  
 - 发布方式  
-   - 测试环境：http://39.108.85.75:8080/  
+   - 测试环境：http://39.108.85.75:8080  
    - 生产环境
 - 系统环境  
 
 | 环境 | 地址 | 账号 | 密码 | 后端API地址 | 前端打包文件替换目录 |
 | ------ | ------ | ------ | ------ |  ------ | ------------ |
-| 测试 | xxx | xxx | xxx | xxx | xxx |
-| 生产1 | xxx | \ | \ | xxx | \ |
-| 生产2 | xxx | \ | \ | xxx | \ |
+| 测试 | \ | \ | \ | \ | \ |
+| 生产1 | \ | \ | \ | \ | \ |
+| 生产2 | \ | \ | \ | \ | \ |
 
 ### 四、后端相关  
 - 后端负责人：xxx  
