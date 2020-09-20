@@ -10,7 +10,7 @@
 - 当前版本：1.0.0
 - 代码托管  
    - 工具：gitHub
-   - 地址：https://github.com/okfantasy007/todolist-web.git
+   - 地址：https://github.com/okfantasy007/todolist-frontend.git
 
 ### 二、开发相关  
 #### 1. 技术栈部分  
@@ -118,7 +118,7 @@
 ### 三、部署相关  
 - 部署负责人：\  
 - 发布方式  
-   - 测试环境：http://39.108.85.75:8080  
+   - 测试环境：http://120.78.86.143:8080  
    - 生产环境
 - 系统环境  
 
@@ -140,16 +140,16 @@
 
 ### 六、功能介绍
 #### 1、新用户注册
-![新用户注册](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%B3%A8%E5%86%8C.png "新用户注册")
+![新用户注册](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E6%B3%A8%E5%86%8C.png "新用户注册")
 
 #### 2、登录成功主动提示未完成任务信息
-![登录成功主动提示信息](https://github.com/okfantasy007/todolist-web/blob/master/image/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.png "登录成功主动提示信息")
+![登录成功主动提示信息](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F.png "登录成功主动提示信息")
 
 #### 3、展示在线用户信息（用户列表，用户数）
-![展示在线用户信息](https://github.com/okfantasy007/todolist-web/blob/master/image/%E5%B1%95%E7%A4%BA%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%88%97%E8%A1%A8.jpg "展示在线用户信息")
+![展示在线用户信息](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E5%B1%95%E7%A4%BA%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%88%97%E8%A1%A8.jpg "展示在线用户信息")
 
 #### 4、新用户登录系统，其他在线用户均可收到该用户的登录通知
-![新用户登录广播通知](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%96%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E9%80%9A%E7%9F%A5.png "新用户登录广播通知")
+![新用户登录广播通知](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E6%96%B0%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E9%80%9A%E7%9F%A5.png "新用户登录广播通知")
 
 #### 5、用户退出系统，自动更新所有在线用户客户端的在线用户信息
 
@@ -158,7 +158,7 @@
 #### 7、管理员账号删除普通账号，如果被删除的普通账号处于已登录状态，则自动让其退出系统
 
 #### 8、检测敏感用户信息变更，自动重定向到登录页重新登录
-![检测用户信息变更](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%A3%80%E6%B5%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%8F%98%E6%9B%B4.png "检测用户信息变更")
+![检测用户信息变更](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E6%A3%80%E6%B5%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E5%8F%98%E6%9B%B4.png "检测用户信息变更")
 
 #### 9、简单权限管理
 ##### 9.1、管理员账号
@@ -175,7 +175,7 @@
 ##### 9.2、普通账号
 ![普通账号-todolist](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%99%AE%E9%80%9A%E8%B4%A6%E5%8F%B7-todolist.png "普通账号-todolist")
 
-![普通账号-用户](https://github.com/okfantasy007/todolist-web/blob/master/image/%E6%99%AE%E9%80%9A%E8%B4%A6%E5%8F%B7-%E7%94%A8%E6%88%B7.png "普通账号-用户")
+![普通账号-用户](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E6%99%AE%E9%80%9A%E8%B4%A6%E5%8F%B7-%E7%94%A8%E6%88%B7.png "普通账号-用户")
 
 **普通账号权限**
 - 查看、编辑自己的任务列表（已完成，未完成）
