@@ -137,8 +137,45 @@
 - 测试用例和测试报告   
     + 测试用例：\
     + 测试报告：\
+    
+### 六、部署相关
+该项目结合自己搭建的jenkins实现自动化部署。
+![部署](https://github.com/okfantasy007/todolist-frontend/blob/master/image/todolist-frontend%EF%BC%88jenkins%EF%BC%89.png "部署")
 
-### 六、功能介绍
+- 构建阶段
+```shell
+tar -czf web.tar.gz build
+```
+- 构建后操作阶段   
+```shell
+#!/bin/bash
+echo "=====deploy todolist frontend start====="
+
+#获取系统当前时间
+t=$(date +%y%m%d_%H%M%S)
+
+#打开前端文件build所在目录
+cd /home/liuyuanbing/todolist/frontend
+
+#备份当前build文件夹，备份后的文件夹以"build_ + 当前时间戳"的形式命名
+cp -r build build_$t
+
+#清理build的备份文件夹，最多只保留最近的两个备份文件夹
+sh /home/liuyuanbing/shell/keep_most_2_build_copy_by_for.sh
+
+#删除服务器当前目录下已存在的build文件夹
+rm -rf build
+
+#将web.tar.gz解压到服务器当前目录下，即为最新的build文件夹
+tar vxf web.tar.gz
+
+#删除服务器当前目录下的web.tar.gz
+rm -rf web.tar.gz
+
+echo "=====deploy todolist frontend end====="
+```
+
+### 七、功能介绍
 #### 1、新用户注册
 ![新用户注册](https://github.com/okfantasy007/todolist-frontend/blob/master/image/%E6%B3%A8%E5%86%8C.png "新用户注册")
 
