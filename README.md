@@ -138,7 +138,10 @@
     + 测试用例：\
     + 测试报告：\
     
-### 六、部署相关  
+### 六、部署相关
+该项目结合自己搭建的jenkins实现自动化部署。
+![部署](https://github.com/okfantasy007/todolist-frontend/blob/master/image/todolist-frontend%EF%BC%88jenkins%EF%BC%89.png "部署")
+
 - 构建阶段
 ```shell
 tar -czf web.tar.gz build
