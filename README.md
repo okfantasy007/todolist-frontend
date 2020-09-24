@@ -140,7 +140,11 @@
     
 ### 六、部署相关
 该项目结合自己搭建的jenkins实现自动化部署。
-![部署](https://github.com/okfantasy007/todolist-frontend/blob/master/image/todolist-frontend%EF%BC%88jenkins%EF%BC%89.png "部署")
+![部署](https://github.com/okfantasy007/todolist-frontend/blob/develop/image/todolist-frontend(jenkins).png "部署")
+
+搭配github webhook实现建通push事件，自动更新部署
+![部署](https://github.com/okfantasy007/todolist-frontend/blob/develop/image/todolist-frontend(github%20webhook-jenkins).png "部署")
+![部署](https://github.com/okfantasy007/todolist-frontend/blob/develop/image/todolist-frontend(github%20webhook-github).png "部署")
 
 - 构建阶段
 ```shell
