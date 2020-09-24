@@ -226,7 +226,7 @@ class LoginForm extends Component {
 				<Content className="login">
 					<div className="login-title">
 						<span className="large-title">TODOLIST</span>
-						<span className="normal-title">V3.0.2</span>
+						<span className="normal-title">V3.0.1</span>
 					</div>
 					<div className="login-form-wrapper">
 						<Form onSubmit={this.handleSubmit} className="login-form">
