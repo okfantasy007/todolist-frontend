@@ -34,11 +34,11 @@ function executeSaga(action) {
           break;
         case '0003':
           message.info("请重新登录");
-          window.location.href = '/login';
+          window.location.href = '/';
           break;
         case '0006':
           message.info("该账号已在其他终端登陆，请重新登录");
-          window.location.href = '/login';
+          window.location.href = '/';
           break;
         default:
           typeMsg = `${action.type}_fail`;

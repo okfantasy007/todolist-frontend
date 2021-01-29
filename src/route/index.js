@@ -16,7 +16,7 @@ message.config({
 const AuthRoute = ({component: Component, ...rest}) => (
 	<Route
 		{...rest}
-		render={props => <Component {...props} />}
+        render={props => localStorage.getItem('auth') ? <Component {...props} /> : <Redirect to='/'/>}
 	/>
 );
 
@@ -24,16 +24,19 @@ class RouterIndex extends Component {
 	render() {
 		return (
 			<Router>
-				<Switch>
-					{/*不需要登录的路由*/}
-					<Route path="/" component={Login}></Route>
-					<Route path="/register" component={Register}></Route>
-					{/*需要登录的路由*/}
-					{/*登录成功之后，无法识别的路由，统一重定向到主页*/}
-					<Route>
-						<Redirect to={{pathname: "/"}}></Redirect>
-					</Route>
-				</Switch>
+                <Switch>
+                    {/*不需要登录的路由*/}
+                    <Route exact path="/" component={Login}></Route>
+                    <AuthRoute exact path="/register" component={Register}></AuthRoute>
+                    {/*<Route exact path="/register#*" component={Register}></Route>*/}
+                    {/*需要登录的路由*/}
+                    <AuthRoute path="/home" component={Home}></AuthRoute>
+                    <AuthRoute path="/setting" component={SettingPage}></AuthRoute>
+                    {/*登录成功之后，无法识别的路由，统一重定向到主页*/}
+                    <Route>
+                        <Redirect to={{pathname: "/"}}></Redirect>
+                    </Route>
+                </Switch>
 			</Router>
 		);
 	}

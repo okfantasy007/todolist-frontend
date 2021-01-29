@@ -18,7 +18,8 @@ class LoginForm extends Component {
         this.state = {
             submitLoading: false,
             verifyUrl: "/user/fetch_verify_code",
-            throwErr: false
+            throwErr: false,
+            keycloak: null
         }
     }
 
@@ -36,14 +37,19 @@ class LoginForm extends Component {
             clientId: 'app1'
         });
 
+        this.setState({
+            keycloak
+        });
+
         keycloak.init({
             onLoad: 'check-sso',
             silentCheckSsoRedirectUri: window.location.origin + '/silent-check-sso.html'
         }).success(function (auth) {
             if (auth) {
-                console.info('Authenticated');
-            }else {
-                console.info('Not Authenticated');
+                console.info('login Authenticated');
+                localStorage.setItem('auth', 'true');
+            } else {
+                console.info('login Not Authenticated');
                 keycloak.login();
             }
         })
@@ -222,7 +228,7 @@ class LoginForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        this.props.form.validateFields((err, values) => {
+        /*this.props.form.validateFields((err, values) => {
             this.setState({
                 throwErr: true
             });
@@ -233,7 +239,12 @@ class LoginForm extends Component {
                     verifyCode: values.verifyCode
                 });
             }
-        });
+        });*/
+        const {keycloak} = this.state;
+        if (keycloak) {
+            keycloak.logout();
+            localStorage.removeItem('auth');
+        }
     };
 
     render() {
@@ -302,7 +313,7 @@ class LoginForm extends Component {
                                     htmlType="submit"
                                     loading={submitLoading}
                                 >
-                                    登录
+                                    退出登录
                                 </Button>
                                 <Button
                                     type="primary"
