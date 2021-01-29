@@ -266,7 +266,7 @@ class LoginForm extends Component {
             <Layout>
                 <Content className="login">
                     <div className="login-title">
-                        <span className="large-title">TODOLIST</span>
+                        <span className="large-title">TODOLIST 222</span>
                         <span className="normal-title">V3.0.2</span>
                     </div>
                     <div className="login-form-wrapper">
