@@ -16,7 +16,7 @@ message.config({
 const AuthRoute = ({component: Component, ...rest}) => (
 	<Route
 		{...rest}
-		render={props => localStorage.getItem('userInfo') ? <Component {...props} /> : <Redirect to='/login'/>}
+		render={props => <Component {...props} />}
 	/>
 );
 
@@ -26,14 +26,12 @@ class RouterIndex extends Component {
 			<Router>
 				<Switch>
 					{/*不需要登录的路由*/}
-					<Route exact path="/login" component={Login}></Route>
-					<Route exact path="/register" component={Register}></Route>
+					<Route path="/" component={Login}></Route>
+					<Route path="/register" component={Register}></Route>
 					{/*需要登录的路由*/}
-					<AuthRoute path="/home" component={Home}></AuthRoute>
-					<AuthRoute path="/setting" component={SettingPage}></AuthRoute>
 					{/*登录成功之后，无法识别的路由，统一重定向到主页*/}
 					<Route>
-						<Redirect to={{pathname: "/home"}}></Redirect>
+						<Redirect to={{pathname: "/"}}></Redirect>
 					</Route>
 				</Switch>
 			</Router>
