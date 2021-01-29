@@ -34,7 +34,7 @@ class LoginForm extends Component {
         var keycloak = new Keycloak({
             url: 'http://10.10.17.41:8080/auth',
             realm: 'demo',
-            clientId: 'app1'
+            clientId: 'app2'
         });
 
         this.setState({
