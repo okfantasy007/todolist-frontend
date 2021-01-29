@@ -25,6 +25,11 @@ class RegisterForm extends Component {
     };
 
     componentDidMount() {
+        if (localStorage.getItem('auth')) {
+            console.info('register Authenticated');
+        } else {
+            console.info('register Not Authenticated');
+        }
         // eslint-disable-next-line
         /*var keycloak = new Keycloak({
             url: 'http://10.10.17.41:8080/auth',

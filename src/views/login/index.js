@@ -48,6 +48,18 @@ class LoginForm extends Component {
             if (auth) {
                 console.info('login Authenticated');
                 localStorage.setItem('auth', 'true');
+                keycloak.loadUserProfile()
+                    .then(function (profile) {
+                        console.info('Authenticated keycloak');
+                        console.info(JSON.stringify(keycloak, null, "  "));
+                        console.info('Authenticated loadUserProfile');
+                        console.info(JSON.stringify({
+                            authenticated: true,
+                            ...profile,
+                        }, null, "  "));
+                    }).catch(function () {
+                        alert('Failed to load user profile');
+                    });
             } else {
                 console.info('login Not Authenticated');
                 keycloak.login();
