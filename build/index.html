@@ -1,14 +1,1 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>TODOLIST</title><link rel="stylesheet" href="//at.alicdn.com/t/font_975949_r5oofw5zgz8.css"><script src="//at.alicdn.com/t/font_975949_r5oofw5zgz8.js"></script><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><script src="http://120.78.86.143:8080/keycloak.js"></script><link href="/static/css/main.9efdffc9.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><script>window.domLoadStartTime=(new Date).getTime()</script><div id="root"></div><script>console.log("window.domLoadStartTime", window.domLoadStartTime);
-	$(document).ready(function () {
-		window.domLoadEndTime = new Date().getTime();
-		console.log("window.domLoadEndTime", window.domLoadEndTime);
-	});
-    window.onload = function () {
-        window.allLoadEndTime = new Date().getTime();
-        console.log("window.allLoadEndTime", window.allLoadEndTime);
-        console.log("window.performance.timing", window.performance.timing);
-        const {navigationStart, domContentLoadedEventEnd, loadEventStart, loadEventEnd} = window.performance.timing;
-        const pageFinishedTime = loadEventEnd || loadEventStart || window.allLoadEndTime;// 解决可能遇到loadEventEnd为0的问题
-        console.log("白屏时间（performance）", domContentLoadedEventEnd - navigationStart);
-        console.log("首屏时间（performance）", pageFinishedTime - navigationStart);
-    };</script><script type="text/javascript" src="/static/js/main.beb7aa62.js"></script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>app1</title><link rel="stylesheet" href="//at.alicdn.com/t/font_975949_r5oofw5zgz8.css"><script src="//at.alicdn.com/t/font_975949_r5oofw5zgz8.js"></script><script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script><script src="http://120.78.86.143:8080/keycloak.js"></script><link href="/static/css/main.d5b5e313.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><script>window.domLoadStartTime=(new Date).getTime()</script><iframe src="http://local.notification/common.html" id="iframe1"></iframe><div id="root"></div><script></script><script type="text/javascript" src="/static/js/main.aa74e390.js"></script></body></html>
