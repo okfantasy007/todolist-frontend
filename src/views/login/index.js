@@ -24,7 +24,6 @@ class LoginForm extends Component {
     };
 
     componentDidMount() {
-        this.connectSocketJs();
         // eslint-disable-next-line
         var keycloak = new Keycloak({
             url: 'http://10.10.17.41:8080/auth',
