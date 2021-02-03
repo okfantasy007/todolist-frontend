@@ -68,6 +68,9 @@ class LoginForm extends Component {
 
                 keycloak.onAuthLogout = function () {
                     console.info('listend onAuthLogout');
+                    localStorage.removeItem('auth');
+                    keycloak.logout();
+                    keycloak.clearToken();
                 }
             } else {
                 console.info('login Not Authenticated');
