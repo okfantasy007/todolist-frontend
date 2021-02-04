@@ -16,7 +16,7 @@ message.config({
 const AuthRoute = ({component: Component, ...rest}) => (
 	<Route
 		{...rest}
-        render={props => localStorage.getItem('auth') ? <Component {...props} /> : <Redirect to='/'/>}
+        render={props => localStorage.getItem('token') ? <Component {...props} /> : <Redirect to='/'/>}
 	/>
 );
 

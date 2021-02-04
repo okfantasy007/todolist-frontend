@@ -42,7 +42,6 @@ class LoginForm extends Component {
         }).success(function (auth) {
             if (auth) {
                 console.info('login Authenticated');
-                localStorage.setItem('auth', 'true');
                 window.keycloak = keycloak;
                 keycloak.loadUserProfile()
                     .then(function (profile) {
@@ -67,7 +66,7 @@ class LoginForm extends Component {
                 }, false);
                 keycloak.onAuthLogout = function () {
                     console.info('listend onAuthLogout');
-                    localStorage.removeItem('auth');
+                    localStorage.removeItem('token');
                     keycloak.logout();
                     keycloak.clearToken();
                 }
